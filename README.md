@@ -11,3 +11,14 @@ docker-compose -f docker-compose.yml -f docker-compose-dev.yml down
 
 docker-compose -f docker-compose.yml -f docker-compose-prod.yml up -d --build
 docker-compose -f docker-compose.yml -f docker-compose-prod.yml down
+
+
+## DEFINITIONS
+
+1. **Docker** es un proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software, proporcionando una capa adicional de abstracción y automatización de virtualización de aplicaciones en múltiples sistemas operativos.​ 
+
+2. **Dockerfile**: is a text file that contains the instructions needed to create a new container image.
+
+3. **Image**: Una imagen de docker empaqueta la aplicacion y el entorno requerido por la aplicacion para ejecutarse.yml
+
+4. **Contenedor**: es una instancia en ejecucion de la immagen
