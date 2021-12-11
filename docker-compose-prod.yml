@@ -1,0 +1,22 @@
+version: '3'
+#cada contenedor representa un contedenor
+services:
+  reactapp:
+    #primero hacemos el docker build
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+      args:
+        - REACT_APP_NAME=Lexfer2-production
+    ports:
+      - '8080:80'
+      # para que tome las variables de entorno en produccion se deben pasar como argumentos
+    # environment:
+    #   - REACT_APP_NAME=Lexfer2-production
+      # - CHOKIDAR_USEPOLLING=tru
+    #PASAR variables de entorno con .env
+    # env_file:
+    #   - ./.env
+##FORMAS DE CORRER DOCKER
+# docker-compoes up
+# docker-compoes up -d
