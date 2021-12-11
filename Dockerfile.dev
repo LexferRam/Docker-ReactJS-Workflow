@@ -41,3 +41,6 @@ CMD [ "yarn", "start" ]
 #para llamar el .env en el "docker run ..."
 #--env-file ./.env
 # EJMPLO DE DOCKER RUN::: docker run --env-file ./.env -v $(pwd):/app -d -p 3001:3000 --name reactapp reactapp
+
+#para ejecutar un build de un dockerfile espeficifico
+#docker build -f Dockerfile.dev .
